@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+    background: var(--secondary);
+    color: var(--black);
+}
+
+/* .wrapper {
+    width: 1440px;
+    margin: 0 auto;
+} */
+
+section {
+    padding: 60px 80px;
+    background-color: var(--fon);
+}
+
+.about-title {
+    font-family: var(--second-family);
+    margin-bottom: 56px;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+}
+
+.about-content{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+}
+
+.texts, .images{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text{
+    width: 629px;
+    margin-bottom: 48px;
+}
+
+.image {
+    border-radius: 20px;
+    margin-bottom: 0;
+}
+
+/* @media only screen and (min-width: 768px) {
+    .sectionFooter {
+      padding: 
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .sectionFooter {
+      padding: 
+    }
+  }
+  
+  @media only screen and (min-width: 1280px) {
+    .sectionFooter {
+      padding: 
+    }
+  } */
