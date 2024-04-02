@@ -34,7 +34,7 @@
   background-color: #fbf5cf;
 }
 
-.shareButton.active {
+.shareButton:active {
   background-color: var(--white);
 }
 
