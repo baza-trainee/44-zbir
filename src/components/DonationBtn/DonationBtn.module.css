@@ -1,6 +1,6 @@
 @import "../../index.css";
 
-.helpLink {
+.donationBtn {
   width: 233px;
   height: 68px;
   padding-top: 16px;
@@ -18,10 +18,10 @@
   font-weight: 400;
   transition: background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
-.helpLink:hover {
+.donationBtn:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.helpLink:active {
+.donationBtn:active {
   background-color: var(--yellow-active);
 }
 
