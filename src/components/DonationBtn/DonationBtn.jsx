@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import styles from "./HelpLink.module.css";
+import styles from "./DonationBtn.module.css";
 
-const HelpLink = () => {
+import { useState } from "react";
+
+const DonationBtn = () => {
   const [isPressed, setIsPressed] = useState(false);
 
   const handleLinkClick = () => {
@@ -26,4 +27,4 @@ const HelpLink = () => {
   );
 };
 
-export default HelpLink;
+export default DonationBtn;

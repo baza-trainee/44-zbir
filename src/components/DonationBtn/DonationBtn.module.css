@@ -1,0 +1,31 @@
+@import "../../index.css";
+
+.helpLink {
+  width: 233px;
+  height: 68px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  background-color: var(--yellow);
+  border: transparent;
+  font-family: var(--second-family);
+  font-size: 24px;
+  font-weight: 400;
+  transition: background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+.helpLink:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.helpLink.active {
+  background-color: var(--yellow-active);
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
