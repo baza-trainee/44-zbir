@@ -2,6 +2,7 @@ import css from './StatusBar.module.css';
 import { useState } from 'react';
 import cartridge from '../../images/status-bar/cartridge.svg';
 import DonationBtn from '../DonationBtn/DonatiomBtn';
+// import { fetchAccountBalance } from '../../helpers/fetchAccountBalance';
 
 // Функція розділяє великі числа на тисячи пробілами та міняє крапку на кому 
 function thousandSeparator(num) {
@@ -26,7 +27,6 @@ function createElementsIndicator(cost) {
 
 const StatusBar = () => {
 	const [cost, setCost] = useState(0);
-
 	// !!! Після вдалих тестів видалити.
 	function testInput(event) {
 		if (event.target.value >= 0) {
@@ -51,7 +51,7 @@ const StatusBar = () => {
 				</div>
 			</div>
 			<div className={css.indicator}>{createElementsIndicator(cost)}</div>
-      <DonationBtn/>
+			<DonationBtn/>
 			{/* !!! Після вдалих тестів видалити. */}
 			<div className={css.test_bloc__section_status_bar}>
 				<label htmlFor="test">Тимчасовий інпут тест status bar</label>
