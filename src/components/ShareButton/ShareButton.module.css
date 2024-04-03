@@ -1,0 +1,45 @@
+@import "../../index.css";
+
+.shareButton {
+  width: 229px;
+  height: 64px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: 2px;
+  color: var(--black);
+  border-radius: 12px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--white);
+  font-family: var(--second-family);
+  font-size: 24px;
+  font-weight: 400;
+  transition: background-color 0.4s ease-in-out;
+}
+.shareButton::after {
+  content: "";
+  position: absolute;
+  height: 106%;
+  width: 102%;
+  border-radius: 12px;
+  background-image: linear-gradient(to right, var(--yellow), var(--blue));
+  z-index: -1;
+}
+
+.shareButton:hover,
+.shareButton:focus {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fbf5cf;
+}
+
+.shareButton:active {
+  background-color: var(--white);
+}
+
+.svg {
+  width: 32px;
+  margin-left: 10px;
+}
