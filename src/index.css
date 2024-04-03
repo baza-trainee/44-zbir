@@ -58,7 +58,7 @@ h2 {
   }
 }
 
-@media screen and(min-width:1024px) {
+@media screen and (min-width: 1024px) {
   section {
     padding: 48px 60px;
   }

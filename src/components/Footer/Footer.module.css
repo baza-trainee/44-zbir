@@ -4,6 +4,8 @@
 
   background-color: var(--green);
   color: var(--white);
+  z-index: 0;
+  position: relative;
 }
 
 @media only screen and (min-width: 768px) {
