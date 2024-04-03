@@ -1,8 +1,7 @@
 import Modal from "react-modal";
-
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
-import DonationBtn from "./components/DonationBtn/DonatiomBtn";
+import DonationBtn from "./components/DonationBtn/DonationBtn";
 import StatusBar from "./components/StatusBar/StatusBar";
 import About from "./components/About/About";
 import Important from "./components/Important/Important";

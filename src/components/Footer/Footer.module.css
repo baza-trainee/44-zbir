@@ -9,6 +9,14 @@
 } */
 
 .sectionFooter {
+  z-index: 0;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+
   padding: 32px 20px;
   text-align: center;
 
@@ -93,10 +101,6 @@
     width: 238px;
   }
 }
-
-/* .button:hover{
-
-} */
 
 .textBaza {
   font-weight: 500;
