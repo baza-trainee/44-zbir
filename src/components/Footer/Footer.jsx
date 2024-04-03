@@ -13,27 +13,26 @@ const Footer = () => {
   const closeModal = () => setModalIsOpen(false);
 
   return (
-    <div className={css.sectionFooter}>
+    <section className={css.sectionFooter}>
       <p className={css.text}>Допоможи іншим дізнатись про наш збір</p>
-      <button className={css.button} type="button" onClick={openModal}>
-        Поділитися
-        {/* <svg class="" width="" height="">
-          <use href=""></use>
-        </svg> */}
-      </button>
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        contentLabel="A modal window for sharing information in a social network."
-        className={css.styledModal}
-        overlayClassName={css.modalOverlay}
-      >
-        <ModalShare closeModal={closeModal} />
-      </Modal>
+      <div className={css.wrapper}>
+        <button className={css.button} type="button" onClick={openModal}>
+          Поділитися
+        </button>
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          contentLabel="A modal window for sharing information in a social network."
+          className={css.styledModal}
+          overlayClassName={css.modalOverlay}
+        >
+          <ModalShare closeModal={closeModal} />
+        </Modal>
+      </div>
       <p className={css.textBaza}>
         Розробка Baza Trainee Ukraine 2024 <br />© Всі права захищені
       </p>
-    </div>
+    </section>
   );
 };
 
