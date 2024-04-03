@@ -1,7 +1,7 @@
 import css from './StatusBar.module.css';
 import { useState } from 'react';
 import cartridge from '../../images/status-bar/cartridge.svg';
-import DonationBtn from '../DonationBtn/DonatiomBtn';
+import DonationBtn from '../DonationBtn/DonationBtn';
 // import { fetchAccountBalance } from '../../helpers/fetchAccountBalance';
 
 // Функція розділяє великі числа на тисячи пробілами та міняє крапку на кому 
