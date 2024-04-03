@@ -1,4 +1,3 @@
-//import css from './Important.module.css'
 import imageFirst from "../../images/important/image_1.jpg";
 import imageSecond from "../../images/important/image_2.jpg";
 import imageThird from "../../images/important/image_3.jpg";
@@ -20,11 +19,6 @@ const importantList = [
 ];
 
 const Important = () => {
-  return (
-    <>
-      <h2>Important section</h2>
-    </>
-  );
   return (
     <section className={css.section}>
       <h2 className={css.title}>Чому це важливо</h2>
