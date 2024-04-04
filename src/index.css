@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;&display=swap');
+
 @import url("./reset.css");
 
 :root {
   --font-family: "Roboto", sans-serif;
   --second-family: "Roboto Slab", sans-serif;
-  --third-family: "Montserrat Alternates", sans-serif;
+
+  /* --third-family: "Montserrat Alternates", sans-serif;
   --font3: "Montserrat", sans-serif;
   --font4: "Dela Gothic One", sans-serif;
   --font5: "Stalinist One", sans-serif;
-  --font6: "Inter", sans-serif;
+  --font6: "Inter", sans-serif; */
   --black: #050505;
   --blue: #0956b9;
   --white-secondary: #fffefb;
@@ -16,11 +21,11 @@
   --green: #46461c;
   --fon: #b5b3a6;
   --secondary: #c3c3c3;
-  --main-color: #375219;
+  /* --main-color: #375219;
   --black-secondary: #2d362e;
   --accent-color: #f7732a;
   --white: #fff;
-  --gray-800: #1f2a37;
+  --gray-800: #1f2a37; */
 }
 
 body {
