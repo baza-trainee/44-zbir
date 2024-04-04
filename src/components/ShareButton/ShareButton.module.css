@@ -16,7 +16,7 @@
   align-items: center;
   gap: 10px;
   cursor: pointer;
-  background-color: var(--white);
+  background-color: var(--white-secondary);
   font-family: var(--second-family);
   font-size: 24px;
   font-weight: 400;
@@ -51,7 +51,7 @@
 }
 
 .shareButton:active {
-  background-color: var(--white);
+  background-color: var(--white-secondary);
 }
 
 .svg {

@@ -22,12 +22,9 @@
 
   background-color: var(--green);
 
-  
-
   font-family: var(--font-family);
 
   color: var(--white-secondary);
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -57,6 +54,8 @@
 
   /* text-align: start; */
   margin-bottom: 48px;
+
+  font-family: var(--second-family);
 }
 
 @media only screen and (min-width: 420px) {
@@ -67,42 +66,10 @@
 
 @media only screen and (min-width: 1280px) {
   .text {
+    margin-bottom: 56px;
+
     font-weight: 400;
     font-size: 36px;
-  }
-}
-
-.button {
-  padding: 16px 32px;
-  width: 278px;
-  height: 66px;
-
-  margin-bottom: 48px;
-
-  border-radius: 12px;
-
-  /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); */
-
-  background-color: var(--white-secondary);
-  color: black;
-  font-weight: 400;
-  font-size: 24px;
-
-  line-height: 1.5;
-  letter-spacing: 0.01em;
-
-  cursor: pointer;
-}
-
-@media only screen and (min-width: 420px) {
-  .button {
-    width: 380px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .button {
-    width: 238px;
   }
 }
 
