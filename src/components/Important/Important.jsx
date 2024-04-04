@@ -32,7 +32,9 @@ const Important = () => {
         {importantList.map((item, index) => {
           return (
             <li className={css.item} key={index}>
-              <img className={css.img} src={item.src} alt="Фото авто" />
+              <div className={css.img_container}>
+                <img className={css.img} src={item.src} alt="Фото авто" />
+              </div>
               <p className={css.text}>{item.title}</p>
             </li>
           );
