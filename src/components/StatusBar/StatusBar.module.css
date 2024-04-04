@@ -40,12 +40,14 @@
   display: block;
   width: 1.96%;
 }
-
+.donat_btn{
+  display: inline-block;
+  width: 100px;
+}
  /* !!! Після вдалих тестів видалити. */
 .test_bloc__section_status_bar{
-  position: fixed;
+  position:fixed;
   top: 10px;
-  left: 10px;
   display: flex;
   flex-direction: column;
   gap: 5px;
