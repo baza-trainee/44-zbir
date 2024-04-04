@@ -14,7 +14,7 @@ const Footer = () => {
   const closeModal = () => setModalIsOpen(false);
 
   return (
-    <section className={css.sectionFooter}>
+    <footer className={css.sectionFooter}>
       <p className={css.text}>Допоможи іншим дізнатись про наш збір</p>
       <ShareButton onClick={openModal} />
       <Modal
@@ -29,7 +29,7 @@ const Footer = () => {
       <p className={css.textBaza}>
         Розробка Baza Trainee Ukraine 2024 <br />© Всі права захищені
       </p>
-    </section>
+    </footer>
   );
 };
 
