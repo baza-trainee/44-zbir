@@ -1,11 +1,13 @@
-import { ReactComponent as ShareImage } from "./share-nodes-outline.svg";
 import styles from "./ShareButton.module.css";
+import icons from "../../sprite.svg";
 
 const ShareButton = ({ onClick }) => {
   return (
-    <button className={styles.shareButton} onClick={() => console.log("click")}>
+    <button className={styles.shareButton} onClick={onClick}>
       Поділитися
-      <ShareImage className={styles.svg} />
+      <svg className={styles.svg}>
+        <use href={`${icons}#icon-share`}></use>
+      </svg>
     </button>
   );
 };

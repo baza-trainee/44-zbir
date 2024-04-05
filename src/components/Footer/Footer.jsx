@@ -4,6 +4,7 @@ import { useState } from "react";
 import Modal from "react-modal";
 
 import ModalShare from "../ModalShare/ModalShare";
+import ShareButton from "../ShareButton/ShareButton";
 
 const Footer = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -13,14 +14,9 @@ const Footer = () => {
   const closeModal = () => setModalIsOpen(false);
 
   return (
-    <div className={css.sectionFooter}>
+    <footer className={css.sectionFooter}>
       <p className={css.text}>Допоможи іншим дізнатись про наш збір</p>
-      <button className={css.button} type="button" onClick={openModal}>
-        Поділитися
-        {/* <svg class="" width="" height="">
-          <use href=""></use>
-        </svg> */}
-      </button>
+      <ShareButton onClick={openModal} />
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
@@ -33,7 +29,7 @@ const Footer = () => {
       <p className={css.textBaza}>
         Розробка Baza Trainee Ukraine 2024 <br />© Всі права захищені
       </p>
-    </div>
+    </footer>
   );
 };
 
