@@ -6,6 +6,7 @@ import Important from "./components/Important/Important";
 import Reward from "./components/Reward/Reward";
 import Footer from "./components/Footer/Footer";
 import ReturnBtn from "./components/ReturnBtn/ReturnBtn";
+import StatusBar from "./components/StatusBar/StatusBar";
 
 Modal.setAppElement("#root");
 
@@ -14,6 +15,7 @@ const App = () => {
     <>
       <Header />
       <Hero />
+      <StatusBar />
       <About />
       <Important />
       <Reward />

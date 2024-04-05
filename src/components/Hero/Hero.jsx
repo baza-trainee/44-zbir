@@ -1,6 +1,6 @@
 import styles from "./Hero.module.css";
 import DonationBtn from "../DonationBtn/DonationBtn";
-import { ReactComponent as Arrow } from "./Arrow.svg";
+import icons from "../../sprite.svg";
 
 const Hero = () => {
   return (
@@ -20,7 +20,9 @@ const Hero = () => {
             </div>
             <div className={styles.goal}>
               <span className={styles.text1}>Наша мета</span>
-              <Arrow className={styles.svg} />
+              <svg className={styles.svg}>
+                <use href={`${icons}#arrow`}></use>
+              </svg>
               <span className={styles.text2}>50 000 грн</span>
             </div>
           </div>
