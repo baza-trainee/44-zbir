@@ -2,6 +2,8 @@
   background: var(--fon);
   font-family: var(--font-family);
   color: var(--black);
+  line-height: 1.5;
+  letter-spacing: 0.01em;
 }
 
 .text {
@@ -20,6 +22,7 @@
 
 .img_container {
   width: 100%;
+  height: 261px;
   overflow: hidden;
   border-radius: 16px;
 }
@@ -39,6 +42,8 @@
   .text,
   .img_container {
     width: calc((100% - 20px) / 2);
+    height: auto;
+    max-height: 600px;
   }
 
   .text {
@@ -46,7 +51,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
   .block {
     gap: 24px;
   }
@@ -54,16 +59,26 @@
   .text,
   .img_container {
     width: calc((100% - 24px) / 2);
-    max-height: 468px;
+    max-height: 480px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .img_container {
-    width: calc((100% - 24px) / 2);
-    height: 100%;
+  .block {
+    gap: 24px;
   }
+
+  .img_container {
+    max-height: 576px;
+  }
+
   .text {
     font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .img_container {
+    max-height: 468px;
   }
 }
