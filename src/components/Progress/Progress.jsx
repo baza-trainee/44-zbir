@@ -6,7 +6,8 @@ const Progress = ({ balance }) => {
 	function createElementsProgress(balance) {
 	
 	const w = document.documentElement.clientWidth;
-	let progress = 50;
+		let progress = 50;
+		
 	if (w < 650) {
 		progress = Math.floor(w * 0.074);
 	}
