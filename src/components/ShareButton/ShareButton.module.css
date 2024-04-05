@@ -1,7 +1,9 @@
-@import "../../index.css";
+/* @import "../../index.css"; */
 
 .shareButton {
-  width: 229px;
+  margin-bottom: 48px;
+
+  width: 278px;
   height: 64px;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -12,13 +14,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
   cursor: pointer;
-  background-color: var(--white);
+  background-color: var(--white-secondary);
   font-family: var(--second-family);
   font-size: 24px;
   font-weight: 400;
   transition: background-color 0.4s ease-in-out;
 }
+
+@media only screen and (min-width: 420px) {
+  .shareButton {
+    width: 380px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .shareButton {
+    width: 238px;
+  }
+}
+
 .shareButton::after {
   content: "";
   position: absolute;
@@ -29,17 +45,16 @@
   z-index: -1;
 }
 
-.shareButton:hover,
-.shareButton:focus {
+.shareButton:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #fbf5cf;
 }
 
 .shareButton:active {
-  background-color: var(--white);
+  background-color: var(--white-secondary);
 }
 
 .svg {
   width: 32px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }

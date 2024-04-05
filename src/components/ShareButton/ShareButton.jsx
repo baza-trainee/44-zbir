@@ -3,7 +3,7 @@ import styles from "./ShareButton.module.css";
 
 const ShareButton = ({ onClick }) => {
   return (
-    <button className={styles.shareButton} onClick={() => console.log("click")}>
+    <button className={styles.shareButton} onClick={onClick}>
       Поділитися
       <ShareImage className={styles.svg} />
     </button>
