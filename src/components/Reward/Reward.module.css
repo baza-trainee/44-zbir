@@ -2,8 +2,8 @@
   background: var(--fon);
   font-family: var(--font-family);
   color: var(--black);
-  line-height: 1.5;
-  letter-spacing: 0.01em;
+  /* line-height: 1.5;
+  letter-spacing: 0.01em; */
 }
 
 .text {

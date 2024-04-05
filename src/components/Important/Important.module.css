@@ -2,8 +2,8 @@
   background: var(--green);
   color: var(--white-secondary);
   font-family: var(--font-family);
-  line-height: 1.5;
-  letter-spacing: 0.01em;
+  /* line-height: 1.5;
+  letter-spacing: 0.01em; */
 }
 
 .list {
