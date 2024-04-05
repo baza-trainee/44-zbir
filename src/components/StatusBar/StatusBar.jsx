@@ -1,8 +1,8 @@
 import css from './StatusBar.module.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import cartridge from '../../images/status-bar/cartridge.svg';
 import DonationBtn from '../DonationBtn/DonationBtn';
-
+import { fetchJarBalance } from '../../helpers/fetchJarBalance';
 // import { fetchAccountBalance } from '../../helpers/fetchAccountBalance';
 
 // Функція розділяє великі числа на тисячи пробілами та міняє крапку на кому 
@@ -28,10 +28,20 @@ function createElementsIndicator(cost) {
 
 const StatusBar = () => {
 	const [balance, setBalance] = useState(0);
-
+	// Оновлення прогресу кожну хвилину.
+	useEffect(() => {
+		fetchJarBalance(setBalance);
+		// const balance_update = setInterval(() => {
+		// 	fetchJarBalance(setBalance);
+		// 	console.log('cost');
+		// }, 60000);
+		// return () => {
+		// 	clearInterval(balance_update);
+		// };
+	}, [])
 	// !!! Після вдалих тестів видалити.
 	const [isOpenTestModal, setIsOpenTestModal] = useState(false);
-	
+
 	function testInput(event) {
 		if (event.target.value >= 0) {
 			setBalance(+event.target.value);
@@ -43,9 +53,14 @@ const StatusBar = () => {
 
 	return (
 		<section className={css.section_status_bar}>
-			<h2 className={css.title} onClick={() => {
-				setIsOpenTestModal(!isOpenTestModal);
-			}}>Зроби свій внесок, приєднуйся до командного збору</h2>
+			<h2
+				className={css.title}
+				onClick={() => {
+					setIsOpenTestModal(!isOpenTestModal);
+				}}
+			>
+				Зроби свій внесок, приєднуйся до командного збору
+			</h2>
 			<div className={css.description}>
 				<div>
 					<h3>Вже зібрано</h3>
@@ -60,10 +75,12 @@ const StatusBar = () => {
 			<DonationBtn />
 
 			{/* !!! Після вдалих тестів видалити.*/}
-			{isOpenTestModal && <div className={css.test_bloc__section_status_bar}>
-				<label htmlFor="test">Тимчасовий інпут тест status bar</label>
-				<input onInput={testInput} type="number" id="test" min={0} max={60000} defaultValue={0} />
-			</div>}
+			{isOpenTestModal && (
+				<div className={css.test_bloc__section_status_bar}>
+					<label htmlFor="test">Тимчасовий інпут тест status bar</label>
+					<input onInput={testInput} type="number" id="test" min={0} max={60000} defaultValue={0} />
+				</div>
+			)}
 		</section>
 	);
 };
