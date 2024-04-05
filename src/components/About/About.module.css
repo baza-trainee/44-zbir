@@ -42,25 +42,11 @@ body {
 .image {
     border-radius: 20px;
     margin-bottom: 0;
-}
-
-
-  
-  
-  
-@media only screen and (min-width: 1280px) {
-  .sectionAbout {
-    padding: 80px;
-  }
-
-  .image, .text {
-    max-width: calc(50% - 12px);
-  }
 } 
 
-@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+@media only screen and (min-width: 320px) and (max-width: 420px) {
   .sectionAbout {
-    padding: 60px;
+      padding: 20px;
   }
 
   .about-title {
@@ -68,25 +54,31 @@ body {
   }
 
   .about-content{
-    font-size: 20px;
+    font-size: 16px;
+  }
+
+  .texts {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .text {
+    width: 100%;
+    margin: 0px;
+  }
+
+  p {
+    margin: 0px;
   }
 
   .image, .text {
-    max-width: calc(50% - 12px);
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .sectionAbout {
-      padding: 40px;
+    flex: 1;
+    max-width: 100%;
+    height: auto;
   }
 
-  .about-content{
-    font-size: 20px;
-  }
-
-  .image, .text {
-    max-width: calc(50% - 10px);
+  .images img:first-child {
+    display: none;
   }
 }
 
@@ -128,9 +120,23 @@ body {
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 420px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .sectionAbout {
-      padding: 20px;
+    padding: 40px;
+}
+
+.about-content{
+  font-size: 20px;
+}
+
+.image, .text {
+  max-width: calc(50% - 10px);
+}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .sectionAbout {
+    padding: 60px;
   }
 
   .about-title {
@@ -138,32 +144,20 @@ body {
   }
 
   .about-content{
-    font-size: 16px;
-  }
-
-  .texts {
-    display: block;
-    margin-bottom: 30px;
-  }
-
-  .text {
-    width: 100%;
-    margin: 0px;
-  }
-
-  p {
-    margin: 0px;
+    font-size: 20px;
   }
 
   .image, .text {
-    flex: 1;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .images img:first-child {
-    display: none;
+    max-width: calc(50% - 12px);
   }
 }
 
+@media only screen and (min-width: 1280px) {
+  .sectionAbout {
+    padding: 80px;
+  }
 
+  .image, .text {
+    max-width: calc(50% - 12px);
+  }
+} 
