@@ -9,7 +9,7 @@ const Progress = ({ balance }) => {
 		let progress = 50;
 		
 	if (w < 650) {
-		progress = Math.floor(w * 0.074);
+		progress = Math.floor(w * 0.07);
 	}
 
 	let num = (balance / 1000).toFixed() < 1 ? 0 : (balance / 1000).toFixed();

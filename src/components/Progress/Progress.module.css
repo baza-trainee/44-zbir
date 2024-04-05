@@ -7,7 +7,6 @@
   padding: 1px 0;
   /* overflow: hidden; */
   margin-bottom: 56px;
-
 }
 /* .progress_img{
     width: 1.96%;
@@ -21,67 +20,77 @@
 
 
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 300px) {
+
+  .progress {
+    border-radius: 16px;
+  }
   .progress_img{
-    width: 1.96%;
-    min-width: 12px;
+    width: 4%;
+    max-width: 18px;
+    min-width: 1px;
     max-height: 76px;
     min-height: 76px;
-  }
-  .progress{
-    background-color: rgb(238, 255, 0);
   }
 
 }
 @media screen and (min-width: 420px) {
+  .progress {
+      border-radius: 18px;
+    }
+  .progress_img {
+      width: 3.5%;
+     
+      min-width: 1px;
+      max-height: 76px;
+      min-height: 76px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+  .progress_img {
+    width: 2.2%;
+    /* max-width: 20px; */
+    min-width: 1px;
+    max-height: 76px;
+    min-height: 76px;
+  }
 
 }
 
 @media screen and (min-width: 768px) {
+  .progress {
+      border-radius: 20px;
+    }
   .progress_img{
-    width: 1.96%;
-    min-width: 14px;
+    width: 2%;
+    max-width: 20px;
+    min-width: 1px;
     max-height: 88px;
     min-height: 88px;
-  }
-  .progress{
-    background-color: rgb(9, 255, 0);
   }
 }
 @media screen and (min-width: 1024px) {
   .progress_img{
-    width: 1.96%;
-    min-width: 18px;
+    width: 1.9%;
+    max-width: 25px;
+    /* min-width: 18px; */
     max-height: 96px;
     min-height: 96px;
     
   }
-  .progress{
-    background-color: aqua;
-  }
 }
 
 @media screen and (min-width: 1280px) {
-    .progress_img{
-    /* width: 1.96%;
-    min-width: 20px;
-    min-height: 100px; */
-    
-  }
-  .progress{
-    background-color: rgb(0, 119, 255);
-  }
+
 }
 @media screen and (min-width: 1440px) {
     .progress_img{
-      width: 1.96%;
-      min-width: 20px;
+      width: 1.95%;
+      max-width: 50px;
+      /* min-width: 20px; */
       max-height: 200%;
       min-height: 100px;
       
     }
-
-  .progress{
-    background-color: rgb(174, 0, 255);
-  }
 }
