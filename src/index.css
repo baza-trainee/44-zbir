@@ -1,15 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
-
-
-
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fira+Sans&family=Oswald:wght@400;700&display=swap");
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600&display=swap');
-
-
 
 @import url("./reset.css");
 
@@ -61,42 +54,43 @@ body {
 }
 
 
- @media screen and (min-width: 420px) {
-    h2 {
-      font-size: 24px;
-    }
+@media screen and (min-width: 420px) {
+  h2 {
+    font-size: 24px;
   }
-  @media screen and (min-width: 768px) {
-    section {
-      padding: 48px 40px;
-    }
-    
-    h2 {
-      font-size: 20px;
-    }
+}
 
-    section {
-      padding: 48px 40px;
-    }
+@media screen and (min-width: 768px) {
+  section {
+    padding: 48px 40px;
+  }
+  
+  h2 {
+    font-size: 20px;
   }
 
-  @media screen and (min-width: 1024px) {
-    section {
-      padding: 48px 60px;
-    }
+  section {
+    padding: 48px 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section {
+    padding: 48px 60px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  h2 {
+    font-family: var(--second-family);
+    font-size: 36px;
+    font-weight: 400;
   }
 
-  @media screen and (min-width: 1280px) {
-    h2 {
-      font-family: var(--second-family);
-      font-size: 36px;
-      font-weight: 400;
-    }
-
-    section {
-      padding: 60px 80px;
-    }
+  section {
+    padding: 60px 80px;
   }
+}
 
 
 

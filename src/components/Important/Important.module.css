@@ -2,6 +2,7 @@
   background: var(--green);
   color: var(--white-secondary);
   font-family: var(--font-family);
+  padding: 60px 80px;
   /* line-height: 1.5;
   letter-spacing: 0.01em; */
 }
