@@ -4,7 +4,7 @@ import css from "./Reward.module.css";
 const Reward = () => {
   return (
     <section className={css.section}>
-      <h2>Символ незламності - гільза за донат</h2>
+      <h2 className={css.title}>Символ незламності - гільза за донат</h2>
       <div className={css.block}>
         <div className={css.text}>
           <p>Ворога зупиняє наш гнів. Його доставляють кулі.</p>
