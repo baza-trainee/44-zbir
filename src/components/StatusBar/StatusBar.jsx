@@ -27,37 +27,43 @@ function createElementsIndicator(cost) {
 }
 
 const StatusBar = () => {
-	const [cost, setCost] = useState(0);
+	const [balance, setBalance] = useState(0);
+
 	// !!! Після вдалих тестів видалити.
+	const [isOpenTestModal, setIsOpenTestModal] = useState(false);
+	
 	function testInput(event) {
 		if (event.target.value >= 0) {
-			setCost(+event.target.value);
-		} else setCost(0);
-		if (event.target.value <= 60000) {
-			setCost(+event.target.value);
-		} else setCost(50000);
+			setBalance(+event.target.value);
+		} else setBalance(0);
+		if (event.target.value <= 200000) {
+			setBalance(+event.target.value);
+		} else setBalance(50000);
 	}
 
 	return (
 		<section className={css.section_status_bar}>
-			<h2 className={css.title}>Зроби свій внесок, приєднуйся до командного збору</h2>
+			<h2 className={css.title} onClick={() => {
+				setIsOpenTestModal(!isOpenTestModal);
+			}}>Зроби свій внесок, приєднуйся до командного збору</h2>
 			<div className={css.description}>
 				<div>
 					<h3>Вже зібрано</h3>
-					<p>{thousandSeparator(cost)} грн</p>
+					<p>{thousandSeparator(balance)} грн</p>
 				</div>
 				<div>
 					<h3>Наша мета</h3>
 					<p>50 000 грн</p>
 				</div>
 			</div>
-			<div className={css.indicator}>{createElementsIndicator(cost)}</div>
-			<DonationBtn/>
-			{/* !!! Після вдалих тестів видалити. */}
-			<div className={css.test_bloc__section_status_bar}>
+			<div className={css.indicator}>{createElementsIndicator(balance)}</div>
+			<DonationBtn />
+
+			{/* !!! Після вдалих тестів видалити.*/}
+			{isOpenTestModal && <div className={css.test_bloc__section_status_bar}>
 				<label htmlFor="test">Тимчасовий інпут тест status bar</label>
 				<input onInput={testInput} type="number" id="test" min={0} max={60000} defaultValue={0} />
-			</div>
+			</div>}
 		</section>
 	);
 };
