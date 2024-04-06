@@ -31,28 +31,28 @@
 /* ============ Адаптация ================ */
 @media all and (768px <= width < 1024px) {
   .burgermenu__content {
-    max-width: 1024px;
+    /* max-width: 1024px; */
     width: 100%;
   }
 }
 
 @media all and (420px <= width < 768px) {
   .burgermenu__content {
-    max-width: 420px;
+    /* max-width: 420px; */
     width: 100%;
   }
 }
 
 @media all and (320px <= width < 420px) {
   .burgermenu__content {
-    max-width: 320px;
+    /* max-width: 320px; */
     width: 100%;
   }
 }
 
 @media all and (width <= 320px) {
   .burgermenu__content {
-    max-width: 320px;
+    /* max-width: 320px; */
     width: 100%;
   }
 }
