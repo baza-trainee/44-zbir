@@ -1,30 +1,10 @@
 import css from './StatusBar.module.css';
 import { useState } from 'react';
-import cartridge from '../../images/status-bar/cartridge.svg';
 import DonationBtn from '../DonationBtn/DonationBtn';
+import thousandSeparator from '../../helpers/separator';
+import createElementsIndicator from '../../helpers/elementsIndicator';
 
 // import { fetchAccountBalance } from '../../helpers/fetchAccountBalance';
-
-// Функція розділяє великі числа на тисячи пробілами та міняє крапку на кому 
-function thousandSeparator(num) {
-  const str = String(num.toFixed());
-	const reg = /\d{1,3}(?=(\d{3})+(?!\d))/g;
-	if (str === '') {
-		return '0';
-	} else return str.replace(reg, '$& ').replace(/\./g, ',');
-}
-
-function createElementsIndicator(cost) {
-  let num = (cost / 1000).toFixed() < 1 ? 0 : (cost / 1000).toFixed();
-  if (num > 50) {
-    num = 50
-	}
-	const elements = [];
-	for (let i = 0; i <= num; i++) {
-		elements.push(<img className={css.item_img} key={i * 15} src={cartridge} alt="cartridge" />);
-	}
-	return elements;
-}
 
 const StatusBar = () => {
 	const [cost, setCost] = useState(0);
