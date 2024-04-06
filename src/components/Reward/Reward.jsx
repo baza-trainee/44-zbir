@@ -1,4 +1,4 @@
-import sleeve from "../../images/reward/sleeve.jpg";
+import sleeve from "../../images/reward/sleeve-1920-2x.jpeg";
 import css from "./Reward.module.css";
 
 const Reward = () => {

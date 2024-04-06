@@ -28,7 +28,6 @@ function createElementsIndicator(cost) {
 
 const StatusBar = () => {
 	const [cost, setCost] = useState(0);
-	}
 
 	return (
 		<section className={css.section_status_bar}>

@@ -1,6 +1,6 @@
-import imageFirst from "../../images/important/image_1.jpg";
-import imageSecond from "../../images/important/image_2.jpg";
-import imageThird from "../../images/important/image_3.jpg";
+import imageFirst from "../../images/important/image_1-1920-2x.jpg";
+import imageSecond from "../../images/important/image_2-1920-2x.jpeg";
+import imageThird from "../../images/important/image_3-1920-2x.jpeg";
 import css from "./Important.module.css";
 
 const importantList = [
