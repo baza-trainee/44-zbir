@@ -1,17 +1,10 @@
 import css from './StatusBar.module.css';
 import { useEffect, useState } from 'react';
 import DonationBtn from '../DonationBtn/DonationBtn';
-import { fetchJarBalance } from '../../helpers/fetchJarBalance';
+import fetchJarBalance  from '../../helpers/fetchJarBalance';
 import Progress from '../Progress/Progress';
+import thousandSeparator from '../../helpers/separator';
 
-// Функція розділяє великі числа на тисячи пробілами та міняє крапку на кому 
-function thousandSeparator(num) {
-  const str = String(num.toFixed());
-	const reg = /\d{1,3}(?=(\d{3})+(?!\d))/g;
-	if (str === '') {
-		return '0';
-	} else return str.replace(reg, '$& ').replace(/\./g, ',');
-}
 
 const StatusBar = () => {
 	const [balance, setBalance] = useState(0);
@@ -43,6 +36,7 @@ const StatusBar = () => {
 		<section className={css.section_status_bar}>
 			<h2
 				className={css.title}
+				// !!!start Після вдалих тестів видалити onClick.
 				onClick={() => {
 					setIsOpenTestModal(!isOpenTestModal);
 				}}
@@ -62,13 +56,14 @@ const StatusBar = () => {
 			<Progress balance={balance} />
 			<DonationBtn />
 
-			{/* !!! Після вдалих тестів видалити.*/}
+			{/* !!!start Після вдалих тестів видалити.*/}
 			{isOpenTestModal && (
 				<div className={css.test_bloc__section_status_bar}>
 					<label htmlFor="test">Тимчасовий інпут тест status bar</label>
 					<input onInput={testInput} type="number" id="test" min={0} max={60000} defaultValue={0} />
 				</div>
 			)}
+			{/* !!! end Після вдалих тестів видалити. */}
 		</section>
 	);
 };
