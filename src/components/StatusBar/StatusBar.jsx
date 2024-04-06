@@ -28,15 +28,6 @@ function createElementsIndicator(cost) {
 
 const StatusBar = () => {
 	const [cost, setCost] = useState(0);
-	// !!! Після вдалих тестів видалити.
-	function testInput(event) {
-		if (event.target.value >= 0) {
-			setCost(+event.target.value);
-		} else setCost(0);
-		if (event.target.value <= 60000) {
-			setCost(+event.target.value);
-		} else setCost(50000);
-	}
 
 	return (
 		<section className={css.section_status_bar}>
@@ -53,11 +44,6 @@ const StatusBar = () => {
 			</div>
 			<div className={css.indicator}>{createElementsIndicator(cost)}</div>
 			<DonationBtn/>
-			{/* !!! Після вдалих тестів видалити. */}
-			<div className={css.test_bloc__section_status_bar}>
-				<label htmlFor="test">Тимчасовий інпут тест status bar</label>
-				<input onInput={testInput} type="number" id="test" min={0} max={60000} defaultValue={0} />
-			</div>
 		</section>
 	);
 };
