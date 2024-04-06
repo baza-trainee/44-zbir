@@ -19,7 +19,28 @@
   overflow: hidden;
 }
 
+@media(max-width: 1440px) {
+  .progress{}
+}
+@media(max-width: 1280px) {
+  .progress{}
+}
+@media(max-width: 1024px) {
+  .progress{}
+}
 
+@media(max-width: 768px) {
+  .progress{}
+
+}
+
+@media(max-width: 420px) {
+  .progress{}
+}
+
+@media(max-width: 320px) {
+  .progress{}
+}
 
 
 
