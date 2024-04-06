@@ -4,6 +4,7 @@ import photo2 from "./img/photo2.jpg";
 import css from "./About.module.css";
 
 const About = () => {
+
   return (
     <>
       <section className={css.sectionAbout}>
@@ -30,13 +31,14 @@ const About = () => {
             </div>
           </div>
           <div className={css["images"]}>
-            <img className={css["image"]} src={photo1} />
-            <img className={css["image"]} src={photo2} />
+            <img className={css["image"]} src={photo1} alt='Бригада'/>
+            <img className={css["image"]} src={photo2} alt='Прапор'/>
           </div>
         </div>
       </section>
     </>
   );
+
 };
 
 export default About;
