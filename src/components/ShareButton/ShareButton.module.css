@@ -3,7 +3,7 @@
 .shareButton {
   margin-bottom: 48px;
 
-  width: 278px;
+  width: 274px;
   height: 64px;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -21,18 +21,6 @@
   font-size: 24px;
   font-weight: 400;
   transition: background-color 0.4s ease-in-out;
-}
-
-@media only screen and (min-width: 420px) {
-  .shareButton {
-    width: 380px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .shareButton {
-    width: 238px;
-  }
 }
 
 .shareButton::after {
@@ -56,16 +44,15 @@
 
 .svg {
   width: 32px;
-  /* margin-left: 10px; */
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (min-width: 420px) {
   .shareButton {
-    width: 372px;
+    width: 373px;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 768px) {
   .shareButton {
-    width: 274px;
+    width: 233px;
   }
 }

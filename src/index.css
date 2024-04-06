@@ -2,7 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fira+Sans&family=Oswald:wght@400;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600&display=swap");
 
 @import url("./reset.css");
 
@@ -53,8 +53,6 @@ h2 {
   font-weight: 500;
 }
 
-
-
 @media screen and (min-width: 420px) {
   h2 {
     font-size: 24px;
@@ -62,14 +60,6 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
-  section {
-    padding: 48px 40px;
-  }
-  
-  h2 {
-    font-size: 20px;
-  }
-
   section {
     padding: 48px 40px;
   }
@@ -92,7 +82,3 @@ h2 {
     padding: 60px 80px;
   }
 }
-
-
-
-
