@@ -31,8 +31,8 @@ const About = () => {
             </div>
           </div>
           <div className={css["images"]}>
-            <img className={css["image"]} src={photo1} alt='Бригада'/>
-            <img className={css["image"]} src={photo2} alt='Прапор'/>
+            <img className={css["image"]} src={photo1} alt='Бригада' />
+            <img className={css["image"]} src={photo2} alt='Прапор' />
           </div>
         </div>
       </section>
@@ -42,3 +42,5 @@ const About = () => {
 };
 
 export default About;
+
+

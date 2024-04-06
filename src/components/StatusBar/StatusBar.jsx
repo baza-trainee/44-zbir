@@ -23,7 +23,7 @@ const StatusBar = () => {
 				</div>
 			</div>
 			<div className={css.indicator}>{createElementsIndicator(cost)}</div>
-			<DonationBtn/>
+			<DonationBtn />
 		</section>
 	);
 };

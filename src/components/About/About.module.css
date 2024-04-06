@@ -1,59 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 body {
-    background: var(--secondary);
-    color: var(--black);
+  background: var(--secondary);
+  color: var(--black);
 }
 
 .sectionAbout {
-    padding: 60px 80px;
-    background-color: var(--fon);
+  padding: 60px 80px;
+  background-color: var(--fon);
 }
 
 .about-title {
-    font-family: var(--second-family);
-    margin-bottom: 56px;
-    font-weight: 400;
-    font-size: 36px;
-    text-align: center;
-    line-height: 150%;
-    letter-spacing: 0.01em;
+  font-family: var(--second-family);
+  margin-bottom: 56px;
+  font-weight: 400;
+  font-size: 36px;
+  text-align: center;
+  line-height: 150%;
+  letter-spacing: 0.01em;
 }
 
-.about-content{
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 150%;
-    letter-spacing: 0.01em;
+.about-content {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
 }
 
-.texts, .images{
-    display: flex;
-    justify-content: space-between;
+.texts,
+.images {
+  display: flex;
+  justify-content: space-between;
 }
 
-.text{
-    width: 629px;
-    margin-bottom: 48px;
+.text {
+  width: 629px;
+  margin-bottom: 48px;
 }
 
 .image {
-    border-radius: 20px;
-    margin-bottom: 0;
-} 
+  border-radius: 20px;
+  margin-bottom: 0;
+}
 
 @media only screen and (min-width: 320px) and (max-width: 420px) {
   .sectionAbout {
-      padding: 20px;
+    padding: 20px;
   }
 
   .about-title {
     font-size: 24px;
   }
 
-  .about-content{
+  .about-content {
     font-size: 16px;
   }
 
@@ -71,7 +72,8 @@ body {
     margin: 0px;
   }
 
-  .image, .text {
+  .image,
+  .text {
     flex: 1;
     max-width: 100%;
     height: auto;
@@ -84,14 +86,14 @@ body {
 
 @media only screen and (min-width: 420px) and (max-width: 768px) {
   .sectionAbout {
-      padding: 20px;
+    padding: 20px;
   }
 
   .about-title {
     font-size: 24px;
   }
 
-  .about-content{
+  .about-content {
     font-size: 20px;
   }
 
@@ -109,7 +111,8 @@ body {
     margin: 0px;
   }
 
-  .image, .text {
+  .image,
+  .text {
     flex: 1;
     max-width: 100%;
     height: auto;
@@ -123,15 +126,16 @@ body {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .sectionAbout {
     padding: 40px;
-}
+  }
 
-.about-content{
-  font-size: 20px;
-}
+  .about-content {
+    font-size: 20px;
+  }
 
-.image, .text {
-  max-width: calc(50% - 10px);
-}
+  .image,
+  .text {
+    max-width: calc(50% - 10px);
+  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
@@ -143,11 +147,12 @@ body {
     font-size: 24px;
   }
 
-  .about-content{
+  .about-content {
     font-size: 20px;
   }
 
-  .image, .text {
+  .image,
+  .text {
     max-width: calc(50% - 12px);
   }
 }
@@ -157,7 +162,8 @@ body {
     padding: 80px;
   }
 
-  .image, .text {
+  .image,
+  .text {
     max-width: calc(50% - 12px);
   }
-} 
+}
