@@ -1,10 +1,8 @@
 import css from './StatusBar.module.css';
 import { useEffect, useState } from 'react';
-// import cartridge from '../../images/status-bar/cartridge.svg';
 import DonationBtn from '../DonationBtn/DonationBtn';
 import { fetchJarBalance } from '../../helpers/fetchJarBalance';
 import Progress from '../Progress/Progress';
-// import { fetchAccountBalance } from '../../helpers/fetchAccountBalance';
 
 // Функція розділяє великі числа на тисячи пробілами та міняє крапку на кому 
 function thousandSeparator(num) {
@@ -14,18 +12,6 @@ function thousandSeparator(num) {
 		return '0';
 	} else return str.replace(reg, '$& ').replace(/\./g, ',');
 }
-
-// function createElementsProgress(balance) {
-// 	let num = (balance / 1000).toFixed() < 1 ? 0 : (balance / 1000).toFixed();
-// 	if (num > 50) {
-// 		num = 50;
-// 	}
-// 	const elements = [];
-// 	for (let i = 0; i <= num; i++) {
-// 		elements.push(<img className={css.item_img} key={i * 15} src={cartridge} alt="progress element" />);
-// 	}
-// 	return elements;
-// }
 
 const StatusBar = () => {
 	const [balance, setBalance] = useState(0);
@@ -39,7 +25,8 @@ const StatusBar = () => {
 		// return () => {
 		// 	clearInterval(balance_update);
 		// };
-	}, [])
+	}, []);
+	
 	// !!! Після вдалих тестів видалити.
 	const [isOpenTestModal, setIsOpenTestModal] = useState(false);
 
@@ -73,7 +60,6 @@ const StatusBar = () => {
 				</div>
 			</div>
 			<Progress balance={balance}/>
-			{/* <div className={css.indicator}>{createElementsProgress(balance)}</div> */}
 			<DonationBtn />
 
 			{/* !!! Після вдалих тестів видалити.*/}
