@@ -2,7 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fira+Sans&family=Oswald:wght@400;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600&display=swap");
 
 @import url("./reset.css");
 
@@ -40,19 +40,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  section {
-    padding: 32px 20px;
-  }
-
-  h2 {
-    font-family: var(--font-family);
-    font-size: 20px;
-    text-align: center;
-    font-weight: 500;
-  }
 }
 
+section {
+  padding: 32px 20px;
+}
+
+h2 {
+  font-family: var(--font-family);
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+}
 
 @media screen and (min-width: 420px) {
   h2 {
@@ -61,14 +60,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  section {
-    padding: 48px 40px;
-  }
-  
-  h2 {
-    font-size: 20px;
-  }
-
   section {
     padding: 48px 40px;
   }
@@ -91,7 +82,3 @@ body {
     padding: 60px 80px;
   }
 }
-
-
-
-

@@ -2,16 +2,10 @@
   background: var(--green);
   color: var(--white-secondary);
   font-family: var(--font-family);
-  padding: 60px 80px;
-  /* line-height: 1.5;
-  letter-spacing: 0.01em; */
 }
 
 .title {
-  font-family: var(--second-family);
-  font-size: 36px;
-  margin-bottom: 56px;
-  font-weight: 400;
+  margin-bottom: 24px;
 }
 
 .list {
@@ -60,6 +54,10 @@
   .text {
     font-size: 20px;
   }
+
+  .title {
+    margin-bottom: 32px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -84,5 +82,9 @@
 
   .text {
     font-size: 24px;
+  }
+
+  .title {
+    margin-bottom: 56px;
   }
 }
