@@ -1,62 +1,42 @@
 .section_status_bar{
   width: 100%;
+  font-family: var(--font-family);
   background-color: var(--green);
   color: var(--white-secondary);
-  /* padding: 60px 80px;
   font-size: 24px;
   font-weight: 400;
-  line-height: 150%; */
   line-height: 1.5;
   letter-spacing: 0.01em;
   text-align: center;
+  padding: 60px 80px;
 }
 
 .title{
   font-family: var(--second-family);
-  /* font-size: 36px; */
+  font-size: 36px;
+  font-weight: 400;
   margin-bottom: 56px;
-  /* font-weight: 400; */
 }
 
 .description{
-  font-size: 24px;
-  font-weight: 400;
+  /* font-size: 24px; */
+
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 48px;
 }
-.description h3{
-
+.description_title{
+  font-size: 24px;
+  font-weight: 400;
   margin-bottom: 24px;
 }
-
-.indicator{
-  width: 100%;
-  border: 1px solid var(--white-secondary);
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  padding: 1px 0;
-  overflow: hidden;
-  margin-bottom: 56px;
-}
-.item_img{
-  width: 1.96%;
+.description_text{
+  font-size: 24px;
+  font-weight: 400;
 }
 
- /* !!! Після вдалих тестів видалити. */
-.test_bloc__section_status_bar{
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.527);
-  border-radius: 5px;
-}
+
 @media screen and (min-width: 1440px) {}
 @media screen and (min-width: 1280px) {}
 @media screen and (min-width: 1024px) {}
@@ -144,4 +124,17 @@
   .indicator{
     border-radius: 6px;
   }
+}
+
+ /* !!! Після вдалих тестів видалити. */
+.test_bloc__section_status_bar{
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.527);
+  border-radius: 5px;
 }

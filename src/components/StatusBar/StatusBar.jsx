@@ -26,8 +26,8 @@ const StatusBar = () => {
 		// 	clearInterval(balance_update);
 		// };
 	}, []);
-	
-	// !!! Після вдалих тестів видалити.
+
+	// !!!start Після вдалих тестів видалити.
 	const [isOpenTestModal, setIsOpenTestModal] = useState(false);
 
 	function testInput(event) {
@@ -38,7 +38,7 @@ const StatusBar = () => {
 			setBalance(+event.target.value);
 		} else setBalance(50000);
 	}
-
+	// !!! end Після вдалих тестів видалити.
 	return (
 		<section className={css.section_status_bar}>
 			<h2
@@ -50,16 +50,16 @@ const StatusBar = () => {
 				Зроби свій внесок, приєднуйся до командного збору
 			</h2>
 			<div className={css.description}>
-				<div>
-					<h3>Вже зібрано</h3>
-					<p>{thousandSeparator(balance)} грн</p>
+				<div className={css.amount}>
+					<h3 className={css.description_title}>Вже зібрано</h3>
+					<p className={css.description_text}>{thousandSeparator(balance)} грн</p>
 				</div>
-				<div>
-					<h3>Наша мета</h3>
-					<p>50 000 грн</p>
+				<div className={css.goal}>
+					<h3 className={css.description_title}>Наша мета</h3>
+					<p className={css.description_text}>50 000 грн</p>
 				</div>
 			</div>
-			<Progress balance={balance}/>
+			<Progress balance={balance} />
 			<DonationBtn />
 
 			{/* !!! Після вдалих тестів видалити.*/}
