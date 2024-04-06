@@ -1,23 +1,22 @@
 import css from './StatusBar.module.css';
 import { useEffect, useState } from 'react';
-import DonationBtn from '../DonationBtn/DonationBtn';
-import fetchJarBalance  from '../../helpers/fetchJarBalance';
-import Progress from '../Progress/Progress';
 import thousandSeparator from '../../helpers/separator';
-
+import fetchJarBalance  from '../../helpers/fetchJarBalance';
+import DonationBtn from '../DonationBtn/DonationBtn';
+import Progress from '../Progress/Progress';
 
 const StatusBar = () => {
 	const [balance, setBalance] = useState(0);
 	// Оновлення прогресу кожну хвилину.
 	useEffect(() => {
 		fetchJarBalance(setBalance);
-		// const balance_update = setInterval(() => {
-		// 	fetchJarBalance(setBalance);
-		// 	console.log('cost');
-		// }, 60000);
-		// return () => {
-		// 	clearInterval(balance_update);
-		// };
+		const balance_update = setInterval(() => {
+			fetchJarBalance(setBalance);
+			console.log('cost');
+		}, 60000);
+		return () => {
+			clearInterval(balance_update);
+		};
 	}, []);
 
 	// !!!start Після вдалих тестів видалити.

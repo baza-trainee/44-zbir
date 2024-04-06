@@ -28,8 +28,8 @@
   .progress_item {
     min-width: 15px;
   }
-
 }
+
 @media screen and (min-width: 420px) {
   .progress {
     height: 92px;
@@ -50,8 +50,8 @@
   .progress_item {
     min-width: 17px;
   }
-  
 }
+
 @media screen and (min-width: 1024px) {
   .progress {
     margin-bottom: 32px;
@@ -71,6 +71,7 @@
     min-width: 18px;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .progress {
     margin-bottom: 56px;

@@ -199,7 +199,7 @@
   }
 }
 
- /* !!! Після вдалих тестів видалити. */
+ /* !!! start Після вдалих тестів видалити. */
 .test_bloc__section_status_bar{
   position: fixed;
   top: 10px;
@@ -211,3 +211,4 @@
   background-color: rgba(0, 0, 0, 0.527);
   border-radius: 5px;
 }
+ /* !!! start Після вдалих тестів видалити. */
