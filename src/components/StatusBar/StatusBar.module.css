@@ -9,8 +9,13 @@
   letter-spacing: 0.01em;
   text-align: center;
   padding: 60px 80px;
+  position: relative;
 }
-
+.scroll_mark{
+  position: absolute;
+  opacity: 0;
+  top: -100px;
+}
 .title{
   font-family: var(--second-family);
   font-size: 36px;
@@ -36,7 +41,9 @@
   .section_status_bar {
     padding: 32px 20px;
   }
-
+  .scroll_mark {
+    top: -80px;
+  }
   .title {
     font-family: var(--font-family);
     text-align: start;
@@ -124,7 +131,9 @@
   .section_status_bar {
     padding: 48px 60px;
   }
-
+  .scroll_mark {
+    top: -100px;
+  }
   .title {
     font-family: var(--font-family);
     font-weight: 500;
