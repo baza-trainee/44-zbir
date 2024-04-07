@@ -6,7 +6,9 @@ import css from "./About.module.css";
 const About = ({ aboutRef }) => {
   return (
     <>
-      <section ref={aboutRef} className={css.sectionAbout}>
+      <section className={css.sectionAbout}>
+      {/* маркер зупинки для scrollToAbout */}
+			<span className='scroll_mark' ref={aboutRef}></span>
         <h2 className={css["about-title"]}>Про Бригаду</h2>
         <div className={css["about-content"]}>
           <div className={css["texts"]}>

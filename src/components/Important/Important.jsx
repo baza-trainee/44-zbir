@@ -90,9 +90,11 @@ const importantList = [
   },
 ];
 
-const Important = ({ important }) => {
+const Important = ({ importantRef }) => {
   return (
-    <section ref={important} className={css.section}>
+    <section className={css.section}>
+      {/* маркер зупинки для scrollToImportant */}
+      <span className='scroll_mark' ref={importantRef}></span>
       <h2 className={css.title}>Чому це важливо</h2>
       <ul className={css.list}>
         {importantList.map((item, index) => {
