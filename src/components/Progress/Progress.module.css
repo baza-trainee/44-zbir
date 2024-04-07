@@ -54,6 +54,7 @@
 
 @media screen and (min-width: 1024px) {
   .progress {
+    height: 100px;
     margin-bottom: 32px;
   }
 
@@ -64,6 +65,7 @@
 
 @media screen and (min-width: 1280px) {
   .progress {
+    height: 100px;
     margin-bottom: 56px;
   }
 
@@ -74,6 +76,7 @@
 
 @media screen and (min-width: 1440px) {
   .progress {
+    height: 100px;
     margin-bottom: 56px;
   }
 
