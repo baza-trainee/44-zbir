@@ -1,9 +1,9 @@
 import sleeve from "../../images/reward/sleeve-1920-2x.jpeg";
 import css from "./Reward.module.css";
 
-const Reward = () => {
+const Reward = ({ reward }) => {
   return (
-    <section className={css.section}>
+    <section ref={reward} className={css.section}>
       <h2 className={css.title}>Символ незламності - гільза за донат</h2>
       <div className={css.block}>
         <div className={css.text}>

@@ -6,11 +6,11 @@ import createElementsIndicator from '../../helpers/elementsIndicator';
 
 // import { fetchAccountBalance } from '../../helpers/fetchAccountBalance';
 
-const StatusBar = () => {
+const StatusBar = ({ goalRef }) => {
 	const [cost, setCost] = useState(0);
 
 	return (
-		<section className={css.section_status_bar}>
+		<section ref={goalRef} className={css.section_status_bar}>
 			<h2 className={css.title}>Зроби свій внесок, приєднуйся до командного збору</h2>
 			<div className={css.description}>
 				<div>
@@ -23,7 +23,7 @@ const StatusBar = () => {
 				</div>
 			</div>
 			<div className={css.indicator}>{createElementsIndicator(cost)}</div>
-			<DonationBtn/>
+			<DonationBtn />
 		</section>
 	);
 };

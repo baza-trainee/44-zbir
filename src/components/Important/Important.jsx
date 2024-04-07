@@ -18,9 +18,9 @@ const importantList = [
   },
 ];
 
-const Important = () => {
+const Important = ({ important }) => {
   return (
-    <section className={css.section}>
+    <section ref={important} className={css.section}>
       <h2 className={css.title}>Чому це важливо</h2>
       <ul className={css.list}>
         {importantList.map((item, index) => {
