@@ -44,7 +44,9 @@
     font-size: 20px;
     margin-bottom: 24px;
   }
-
+  .title_mobile{
+    display: none;
+  }
   .description {
     margin-bottom: 24px;
   }
@@ -72,7 +74,9 @@
     font-size: 20px;
     margin-bottom: 24px;
   }
-
+  .title_mobile{
+    display:inline-block
+  }
   .description {
     margin-bottom: 32px;
   }
