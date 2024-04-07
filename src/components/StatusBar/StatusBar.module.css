@@ -202,7 +202,7 @@
  /* !!! start Після вдалих тестів видалити. */
 .test_bloc__section_status_bar{
   position: fixed;
-  top: 10px;
+  top: 600px;
   left: 10px;
   display: flex;
   flex-direction: column;
@@ -210,5 +210,6 @@
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.527);
   border-radius: 5px;
+  z-index: 50;
 }
  /* !!! start Після вдалих тестів видалити. */
