@@ -202,7 +202,7 @@
  /* !!! start Після вдалих тестів видалити. */
 .test_bloc__section_status_bar{
   position: fixed;
-  top: 600px;
+  top: 60px;
   left: 10px;
   display: flex;
   flex-direction: column;
