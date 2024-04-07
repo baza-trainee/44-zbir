@@ -3,11 +3,11 @@ import photo1 from "../../images/about/photo1-1920-2x.jpeg";
 import photo2 from "../../images/about/photo2-1920-2x.jpeg";
 import css from "./About.module.css";
 
-const About = () => {
+const About = ({ aboutRef }) => {
 
   return (
     <>
-      <section className={css.sectionAbout}>
+      <section ref={aboutRef} className={css.sectionAbout}>
         <h2 className={css["about-title"]}>Про Бригаду</h2>
         <div className={css["about-content"]}>
           <div className={css["texts"]}>
@@ -31,8 +31,8 @@ const About = () => {
             </div>
           </div>
           <div className={css["images"]}>
-            <img className={css["image"]} src={photo1} alt='Бригада'/>
-            <img className={css["image"]} src={photo2} alt='Прапор'/>
+            <img className={css["image"]} src={photo1} alt='Бригада' />
+            <img className={css["image"]} src={photo2} alt='Прапор' />
           </div>
         </div>
       </section>
@@ -42,3 +42,5 @@ const About = () => {
 };
 
 export default About;
+
+
