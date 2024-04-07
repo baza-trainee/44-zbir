@@ -12,7 +12,6 @@ const StatusBar = () => {
 		fetchJarBalance(setBalance);
 		const balance_update = setInterval(() => {
 			fetchJarBalance(setBalance);
-			console.log('cost');
 		}, 60000);
 		return () => {
 			clearInterval(balance_update);
