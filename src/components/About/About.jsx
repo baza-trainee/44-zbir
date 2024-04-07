@@ -4,7 +4,6 @@ import photo2 from "../../images/about/photo2-1920-2x.jpeg";
 import css from "./About.module.css";
 
 const About = ({ aboutRef }) => {
-
   return (
     <>
       <section ref={aboutRef} className={css.sectionAbout}>
@@ -31,8 +30,13 @@ const About = ({ aboutRef }) => {
             </div>
           </div>
           <div className={css["images"]}>
-            <img className={css["image"]} src={photo1} alt='Бригада' />
-            <img className={css["image"]} src={photo2} alt='Прапор' />
+            <div className={css['image']}>
+              <img className={css["image1"]} src={photo1} alt='Бригада'/>
+            </div>
+            <div className={css['image']}>
+              <img className={css["image2"]} src={photo2} alt='Прапор'/>
+            </div>
+
           </div>
         </div>
       </section>
