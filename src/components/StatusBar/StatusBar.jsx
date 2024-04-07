@@ -1,29 +1,72 @@
 import css from './StatusBar.module.css';
-import { useState } from 'react';
-import DonationBtn from '../DonationBtn/DonationBtn';
+import { useEffect, useState } from 'react';
 import thousandSeparator from '../../helpers/separator';
-import createElementsIndicator from '../../helpers/elementsIndicator';
+import fetchJarBalance  from '../../helpers/fetchJarBalance';
+import DonationBtn from '../DonationBtn/DonationBtn';
+import Progress from '../Progress/Progress';
 
-// import { fetchAccountBalance } from '../../helpers/fetchAccountBalance';
 
 const StatusBar = ({ goalRef }) => {
-	const [cost, setCost] = useState(0);
+	const [balance, setBalance] = useState(0);
+	// Оновлення прогресу кожну хвилину.
+	useEffect(() => {
+		fetchJarBalance(setBalance);
+		const balance_update = setInterval(() => {
+			fetchJarBalance(setBalance);
+		}, 60000);
+		return () => {
+			clearInterval(balance_update);
+		};
+	}, []);
 
+
+	// !!!start Після вдалих тестів видалити.
+	const [isOpenTestModal, setIsOpenTestModal] = useState(false);
+
+	function testInput(event) {
+		if (event.target.value >= 0) {
+			setBalance(+event.target.value);
+		} else setBalance(0);
+		if (event.target.value <= 200000) {
+			setBalance(+event.target.value);
+		} else setBalance(50000);
+	}
+	// !!! end Після вдалих тестів видалити.
 	return (
+
 		<section ref={goalRef} className={css.section_status_bar}>
-			<h2 className={css.title}>Зроби свій внесок, приєднуйся до командного збору</h2>
+			<h2
+				className={css.title}
+				// !!!start Після вдалих тестів видалити onClick.
+				onClick={() => {
+					setIsOpenTestModal(!isOpenTestModal);
+				}}
+			>
+				Зроби свій внесок, приєднуйся до командного збору
+			</h2>
 			<div className={css.description}>
-				<div>
-					<h3>Вже зібрано</h3>
-					<p>{thousandSeparator(cost)} грн</p>
+				<div className={css.amount}>
+					<h3 className={css.description_title}>Вже зібрано</h3>
+					<p className={css.description_text}>{thousandSeparator(balance)} грн</p>
 				</div>
-				<div>
-					<h3>Наша мета</h3>
-					<p>50 000 грн</p>
+				<div className={css.goal}>
+					<h3 className={css.description_title}>Наша мета</h3>
+					<p className={css.description_text}>50 000 грн</p>
 				</div>
 			</div>
-			<div className={css.indicator}>{createElementsIndicator(cost)}</div>
+
+			<Progress balance={balance} />
 			<DonationBtn />
+
+			{/* !!!start Після вдалих тестів видалити.*/}
+			{isOpenTestModal && (
+				<div className={css.test_bloc__section_status_bar}>
+					<label htmlFor="test">Тимчасовий інпут тест status bar</label>
+					<input onInput={testInput} type="number" id="test" min={0} max={60000} defaultValue={0} />
+				</div>
+			)}
+			{/* !!! end Після вдалих тестів видалити. */}
+
 		</section>
 	);
 };
