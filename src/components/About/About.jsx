@@ -6,7 +6,7 @@ import css from "./About.module.css";
 const About = () => {
   return (
     <>
-      <section className={css.sectionAbout}>
+      <section ref={aboutRef} className={css.sectionAbout}>
         <h2 className={css["about-title"]}>Про Бригаду</h2>
         <div className={css["about-content"]}>
           <div className={css["texts"]}>
@@ -36,6 +36,7 @@ const About = () => {
             <div className={css['image']}>
               <img className={css["image2"]} src={photo2} alt='Прапор'/>
             </div>
+
           </div>
         </div>
       </section>
@@ -45,3 +46,5 @@ const About = () => {
 };
 
 export default About;
+
+
