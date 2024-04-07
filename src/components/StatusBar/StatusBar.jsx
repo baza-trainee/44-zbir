@@ -42,7 +42,7 @@ const StatusBar = ({ goalRef }) => {
 					setIsOpenTestModal(!isOpenTestModal);
 				}}
 			>
-				Зроби свій внесок, приєднуйся до командного збору
+				Зроби свій внесок, приєднуйся до <span className={css.title_mobile}>командного</span> збору
 			</h2>
 			<div className={css.description}>
 				<div className={css.amount}>
