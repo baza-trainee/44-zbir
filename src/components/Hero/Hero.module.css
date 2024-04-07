@@ -7,6 +7,7 @@
   background-size: cover;
   background-position: center;
   color: var(--white-secondary);
+  margin-top: 80px;
 }
 .heroBlock {
   display: flex;
@@ -167,6 +168,7 @@
     height: 695px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url("../../images/hero/hero-background-1024-1x.jpeg");
+    margin-top: 100px;
   }
   .heroContent {
     width: 748px;

@@ -19,11 +19,28 @@ const StatusBar = ({ goalRef }) => {
 		};
 	}, []);
 
+
+	// !!!start Після вдалих тестів видалити.
+	const [isOpenTestModal, setIsOpenTestModal] = useState(false);
+
+	function testInput(event) {
+		if (event.target.value >= 0) {
+			setBalance(+event.target.value);
+		} else setBalance(0);
+		if (event.target.value <= 200000) {
+			setBalance(+event.target.value);
+		} else setBalance(50000);
+	}
+	// !!! end Після вдалих тестів видалити.
 	return (
 
 		<section ref={goalRef} className={css.section_status_bar}>
 			<h2
 				className={css.title}
+				// !!!start Після вдалих тестів видалити onClick.
+				onClick={() => {
+					setIsOpenTestModal(!isOpenTestModal);
+				}}
 			>
 				Зроби свій внесок, приєднуйся до командного збору
 			</h2>
@@ -40,6 +57,16 @@ const StatusBar = ({ goalRef }) => {
 
 			<Progress balance={balance} />
 			<DonationBtn />
+
+			{/* !!!start Після вдалих тестів видалити.*/}
+			{isOpenTestModal && (
+				<div className={css.test_bloc__section_status_bar}>
+					<label htmlFor="test">Тимчасовий інпут тест status bar</label>
+					<input onInput={testInput} type="number" id="test" min={0} max={60000} defaultValue={0} />
+				</div>
+			)}
+			{/* !!! end Після вдалих тестів видалити. */}
+
 		</section>
 	);
 };
