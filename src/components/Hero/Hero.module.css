@@ -243,8 +243,6 @@
 @media only screen and (min-width: 1440px) {
   .hero {
     height: 727px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../../images/hero/hero-background-1920-1x.jpeg");
   }
   .heroContent {
     width: 748px;
@@ -291,12 +289,5 @@
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url("../../images/hero/hero-background-1280-2x.jpeg");
-  }
-}
-
-@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2) {
-  .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../../images/hero/hero-background-1920-2x.jpeg");
   }
 }
