@@ -36,6 +36,7 @@ const About = ({ aboutRef }) => {
             <div className={css['image']}>
               <img className={css["image2"]} src={photo2} alt='Прапор'/>
             </div>
+
           </div>
         </div>
       </section>
@@ -45,3 +46,5 @@ const About = ({ aboutRef }) => {
 };
 
 export default About;
+
+
