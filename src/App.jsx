@@ -1,3 +1,5 @@
+import React, { useRef, useState } from "react";
+
 import Modal from "react-modal";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
@@ -11,16 +13,83 @@ import StatusBar from "./components/StatusBar/StatusBar";
 Modal.setAppElement("#root");
 
 const App = () => {
+  const goalRef = useRef(null);
+  const aboutRef = useRef(null);
+  const important = useRef(null);
+  const reward = useRef(null);
+
+  const [currentSection, setCurrentSection] = useState("");
+  const [previewSection, setPreviewSection] = useState("");
+
+  //Прокрутка до секции Мета
+  const scrollToGoal = () => {
+    goalRef.current.scrollIntoView({ behavior: "smooth" });
+    SectionId(dataHeader.menu[0].id);
+  };
+
+  //Прокрутка до секции Про бригаду
+  const scrollToAbout = () => {
+    aboutRef.current.scrollIntoView({ behavior: "smooth" });
+    SectionId(dataHeader.menu[1].id);
+  };
+
+  //Прокрутка до секции Чому це важливо
+  const scrollToImportant = () => {
+    important.current.scrollIntoView({ behavior: "smooth" });
+    SectionId(dataHeader.menu[2].id);
+  };
+
+  //Прокрутка до секции Гільза за донат
+  const scrollToReward = () => {
+    reward.current.scrollIntoView({ behavior: "smooth" });
+    SectionId(dataHeader.menu[3].id);
+  };
+
+  // Id  секции
+  const SectionId = (sectionId) => {
+    setPreviewSection(sectionId); // Устанавливаем новое значение id секции 
+    setCurrentSection(currentSection); // Записываем текущее значение id секции в предыдущее значение
+  }
+
+
+  //Данные для Хедера
+  const dataHeader = {
+    menu: [
+      {
+        id: 11,
+        name: "Мета",
+        link: scrollToGoal,
+      },
+      {
+        id: 12,
+        name: "Про бригаду",
+        link: scrollToAbout,
+      },
+      {
+        id: 13,
+        name: "Чому це важливо",
+        link: scrollToImportant,
+      },
+      {
+        id: 14,
+        name: "Гільза за донат",
+        link: scrollToReward,
+      },
+
+    ],
+  };
+
   return (
     <>
-      <Header />
+      <Header list={dataHeader.menu} idPreview={previewSection} />
       <Hero />
-      <StatusBar />
-      <About />
-      <Important />
-      <Reward />
+      <StatusBar goalRef={goalRef} />
+      <About aboutRef={aboutRef} />
+      <Important important={important} />
+      <Reward reward={reward} />
       <Footer />
       <ReturnBtn />
+
     </>
   );
 };

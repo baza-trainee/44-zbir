@@ -5,7 +5,8 @@ import fetchJarBalance  from '../../helpers/fetchJarBalance';
 import DonationBtn from '../DonationBtn/DonationBtn';
 import Progress from '../Progress/Progress';
 
-const StatusBar = () => {
+
+const StatusBar = ({ goalRef }) => {
 	const [balance, setBalance] = useState(0);
 	// Оновлення прогресу кожну хвилину.
 	useEffect(() => {
@@ -17,6 +18,7 @@ const StatusBar = () => {
 			clearInterval(balance_update);
 		};
 	}, []);
+
 
 	// !!!start Після вдалих тестів видалити.
 	const [isOpenTestModal, setIsOpenTestModal] = useState(false);
@@ -31,7 +33,8 @@ const StatusBar = () => {
 	}
 	// !!! end Після вдалих тестів видалити.
 	return (
-		<section className={css.section_status_bar}>
+
+		<section ref={goalRef} className={css.section_status_bar}>
 			<h2
 				className={css.title}
 				// !!!start Після вдалих тестів видалити onClick.
@@ -51,6 +54,7 @@ const StatusBar = () => {
 					<p className={css.description_text}>50 000 грн</p>
 				</div>
 			</div>
+
 			<Progress balance={balance} />
 			<DonationBtn />
 
@@ -62,6 +66,7 @@ const StatusBar = () => {
 				</div>
 			)}
 			{/* !!! end Після вдалих тестів видалити. */}
+
 		</section>
 	);
 };
