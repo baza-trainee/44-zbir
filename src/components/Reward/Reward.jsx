@@ -14,7 +14,9 @@ import css from "./Reward.module.css";
 
 const Reward = ({ reward }) => {
   return (
-    <section ref={reward} className={css.section}>
+    <section className={css.section}>
+      {/* маркер зупинки для scrollToReward */}
+      <span className={'scroll_mark'} ref={reward}></span>
       <h2 className={css.title}>Символ незламності - гільза за донат</h2>
       <div className={css.block}>
         <div className={css.text}>

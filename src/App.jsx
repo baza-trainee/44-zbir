@@ -15,7 +15,7 @@ Modal.setAppElement("#root");
 const App = () => {
   const goalRef = useRef(null);
   const aboutRef = useRef(null);
-  const important = useRef(null);
+  const importantRef = useRef(null);
   const reward = useRef(null);
 
   const [currentSection, setCurrentSection] = useState("");
@@ -35,7 +35,7 @@ const App = () => {
 
   //Прокрутка до секции Чому це важливо
   const scrollToImportant = () => {
-    important.current.scrollIntoView({ behavior: "smooth" });
+    importantRef.current.scrollIntoView({ behavior: "smooth" });
     SectionId(dataHeader.menu[2].id);
   };
 
@@ -85,7 +85,7 @@ const App = () => {
       <Hero />
       <StatusBar goalRef={goalRef} />
       <About aboutRef={aboutRef} />
-      <Important important={important} />
+      <Important importantRef={importantRef} />
       <Reward reward={reward} />
       <Footer />
       <ReturnBtn />

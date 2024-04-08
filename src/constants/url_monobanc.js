@@ -1,8 +1,10 @@
-// Посилання на монобанку.!!! Замінити на url нашої банки !!!
-export const URL_LINK = 'https://';
-
-// Запит до монобанки через JAR_ID.
-export const BASE_URL = 'https://api.monobank.ua/bank/jar/';
-// !!! Випадкова монобанка з інтирнету.Результат для тестів: на рахунку +- 4435грн.!!!
+// Посилання на монобанку. !!! Замінити на url нашої банки !!!
+// Зразок посилання: https://send.monobank.ua/jar/7ova2RKMZx
+export const DONATION_URL = '#';
+// URL балансу до монобанки через JAR_ID.
+const BALANSE_BASE_URL = 'https://api.monobank.ua/bank/jar/';
+// !!! Випадкова монобанка з інтирнету.Результат для тестів: на рахунку +- 4435грн.!!!balance
 // !!! Замінити на JAR_ID нашої банки !!!
-export  const JAR_ID = 'W4r9rTbz9waFSQagfoAKddqQy8drF7h';
+const JAR_ID = 'W4r9rTbz9waFSQagfoAKddqQy8drF7h';
+
+export const BALANSE_URL = `${BALANSE_BASE_URL}${JAR_ID}`;

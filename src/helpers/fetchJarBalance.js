@@ -1,22 +1,26 @@
-import { BASE_URL, JAR_ID } from "../constants/url_monobanc";
+import { BALANSE_URL } from '../constants/url_monobanc';
 // Запит до монобанки через JAR_ID.
 
-const fetchJarBalance = async (callback)=> {
-	const URL = `${BASE_URL}${JAR_ID}`;
-	const response = await fetch(URL, {
+const fetchJarBalance = async (callback) => {
+	try {
+		const response = await fetch(BALANSE_URL, {
 		method: 'GET'
 	});
 
-	if (!response.ok) {
-		throw new Error('Network response was not ok');
+		if (response.ok) {
+			const data = await response.json();
+			//  !!! Видалити console.log після тестувань !!!
+			console.log(data)
+			const balance = Math.floor(data.amount / 100);
+			callback(balance)
+		} else {
+			throw new Error(response.status);
+		}
+	} catch (error) {
+		console.error('Fetch', error);
 	}
-
-	const data = await response.json();
-	//  !!! Видалити console.log після тестувань !!!
-	console.log(data)
-	const balance = Math.floor(data.amount / 100);
-  callback(balance);
 };
+
 export default fetchJarBalance
 
 // Зразок Ок-відповіді на запит даних. вивід в console.log для тестів: 
