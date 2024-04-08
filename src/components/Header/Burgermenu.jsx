@@ -22,8 +22,7 @@ export default function BurgerMenu({ list, idPreview }) {
     };
 
     return (
-        <div>
-
+        <>
             <div className="">
                 {isOpen ? <img onClick={closeMenu}
                     src={burgermenuclose}
@@ -52,7 +51,7 @@ export default function BurgerMenu({ list, idPreview }) {
                     </div>
                 </div>
             )}
-        </div>
+        </>
     )
 
 }  
