@@ -18,7 +18,7 @@ const fetchJarBalance = async (callback) => {
 			throw new Error(response.status);
 		}
 	} catch (error) {
-		console.error('Fetch', error);
+		console.error('Помилка отримання даних, перевірте налаштування запитів.', error);
 	}
 };
 
