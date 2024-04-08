@@ -9,10 +9,11 @@ const fetchJarBalance = async (callback) => {
 
 		if (response.ok) {
 			const data = await response.json();
-			//  !!! Видалити console.log після тестувань !!!
-			console.log(data)
+			//  !!! Видалити testLogResult після тестувань !!!
+			testLogResult(data);
+
 			const balance = Math.floor(data.amount / 100);
-			callback(balance)
+			callback(balance);
 		} else {
 			throw new Error(response.status);
 		}
@@ -21,7 +22,22 @@ const fetchJarBalance = async (callback) => {
 	}
 };
 
-export default fetchJarBalance
+export default fetchJarBalance;
+	//  !!! Start Видалити testLogResult після тестувань !!!
+function testLogResult(data) {
+	const result = `
+	Тестування запитів балансу моно банки. Оновлення +- одна хвилина,
+	_________________________________________________________________
+	Результат
+	-----------------------------------------------------------------
+	Ім'я: ${data.ownerName}, 
+	Заголовок: ${data.title}
+	Вже зібрано: ${data.amount / 100} Грн.
+	Мета: ${data.goal / 100} Грн.
+	Опис: ${data.description}`;
+	console.log(result);
+}
+	//  !!! End Видалити testLogResult після тестувань !!!
 
 // Зразок Ок-відповіді на запит даних. вивід в console.log для тестів: 
 //{ "amount": 423559, "goal": 24000000000, "ownerIcon": "https://icons.monobank.com.ua/inf/icon-mdpi/geroycare_1.png", "title": "ГЕРОЙCAR збирає на 1000 пікапів для ЗСУ", "ownerName": "RUSLAN SHOSTAK CF", "currency": 980, "description": "Віськовим потрібні автівки. І багато! ГЕРОЙCAR збирає 240 млн грн на закупівлю 1000 авто, серед яких потужні повнопривідні пікапи Ford, SsangYong, буси та інші авто, які так необхідні нашим героям.", "jarId": "7ova2RKMZx", "blago": true, "closed": false }
