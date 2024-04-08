@@ -5,7 +5,6 @@ import fetchJarBalance  from '../../helpers/fetchJarBalance';
 import DonationBtn from '../DonationBtn/DonationBtn';
 import Progress from '../Progress/Progress';
 
-
 const StatusBar = ({ goalRef }) => {
 	const [balance, setBalance] = useState(0);
 	// Оновлення прогресу кожну хвилину.
@@ -19,31 +18,11 @@ const StatusBar = ({ goalRef }) => {
 		};
 	}, []);
 
-
-	// !!!start Після вдалих тестів видалити.
-	const [isOpenTestModal, setIsOpenTestModal] = useState(false);
-
-	function testInput(event) {
-		if (event.target.value >= 0) {
-			setBalance(+event.target.value);
-		} else setBalance(0);
-		if (event.target.value <= 200000) {
-			setBalance(+event.target.value);
-		} else setBalance(50000);
-	}
-	// !!! end Після вдалих тестів видалити.
 	return (
-
 		<section className={css.section_status_bar}>
 			{/* маркер зупинки для scrollToGoal */}
 			<span className={'scroll_mark'} ref={goalRef}></span>
-			<h2
-				className={css.title}
-				// !!!start Після вдалих тестів видалити onClick.
-				onClick={() => {
-					setIsOpenTestModal(!isOpenTestModal);
-				}}
-			>
+			<h2 className={css.title}>
 				Зроби свій внесок, приєднуйся до <span className={css.title_mobile}>командного</span> збору
 			</h2>
 			<div className={css.description}>
@@ -59,16 +38,6 @@ const StatusBar = ({ goalRef }) => {
 
 			<Progress balance={balance} />
 			<DonationBtn />
-
-			{/* !!!start Після вдалих тестів видалити.*/}
-			{isOpenTestModal && (
-				<div className={css.test_bloc__section_status_bar}>
-					<label htmlFor="test">Тимчасовий інпут тест status bar</label>
-					<input onInput={testInput} type="number" id="test" min={0} max={60000} defaultValue={0} />
-				</div>
-			)}
-			{/* !!! end Після вдалих тестів видалити. */}
-
 		</section>
 	);
 };
