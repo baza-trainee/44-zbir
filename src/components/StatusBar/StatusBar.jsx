@@ -36,7 +36,7 @@ const StatusBar = ({ goalRef }) => {
 
 		<section className={css.section_status_bar}>
 			{/* маркер зупинки для scrollToGoal */}
-			<span className='scroll_mark' ref={goalRef}></span>
+			<span className={'scroll_mark'} ref={goalRef}></span>
 			<h2
 				className={css.title}
 				// !!!start Після вдалих тестів видалити onClick.

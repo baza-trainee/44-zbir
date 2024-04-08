@@ -16,7 +16,7 @@ const Reward = ({ reward }) => {
   return (
     <section className={css.section}>
       {/* маркер зупинки для scrollToReward */}
-      <span className='scroll_mark' ref={reward}></span>
+      <span className={'scroll_mark'} ref={reward}></span>
       <h2 className={css.title}>Символ незламності - гільза за донат</h2>
       <div className={css.block}>
         <div className={css.text}>

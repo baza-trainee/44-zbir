@@ -8,7 +8,7 @@ const About = ({ aboutRef }) => {
     <>
       <section className={css.sectionAbout}>
       {/* маркер зупинки для scrollToAbout */}
-			<span className='scroll_mark' ref={aboutRef}></span>
+			<span className={'scroll_mark'} ref={aboutRef}></span>
         <h2 className={css["about-title"]}>Про Бригаду</h2>
         <div className={css["about-content"]}>
           <div className={css["texts"]}>
