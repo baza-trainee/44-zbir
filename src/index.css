@@ -10,11 +10,7 @@
   --font-family: "Roboto", sans-serif;
   --second-family: "Roboto Slab", sans-serif;
   --font4: "Dela Gothic One", sans-serif;
-  /* --third-family: "Montserrat Alternates", sans-serif;
-  --font3: "Montserrat", sans-serif;
- 
-  --font5: "Stalinist One", sans-serif;
-  --font6: "Inter", sans-serif; */
+
   --black: #050505;
   --blue: #0956b9;
   --white-secondary: #fffefb;
@@ -23,11 +19,6 @@
   --green: #46461c;
   --fon: #b5b3a6;
   --secondary: #c3c3c3;
-  /* --main-color: #375219;
-  --black-secondary: #2d362e;
-  --accent-color: #f7732a;
-  --white: #fff;
-  --gray-800: #1f2a37; */
 }
 
 body {

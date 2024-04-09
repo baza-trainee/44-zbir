@@ -75,13 +75,12 @@
   .title_mobile{
     display:inline-block
   }
-  
+
   .description {
     margin-bottom: 32px;
   }
 
   .description_title {
-    font-weight: 500;
     font-size: 16px;
     margin-bottom: 24px;
   }
@@ -107,7 +106,6 @@
   }
 
   .description_title {
-    font-weight: 500;
     font-size: 16px;
     margin-bottom: 24px;
   }
@@ -127,7 +125,6 @@
   }
 
   .description_title {
-    font-weight: 500;
     font-size: 20px;
     margin-bottom: 24px;
   }
@@ -144,7 +141,6 @@
 
   .title {
     font-family: var(--second-family);
-    font-weight: 400;
     font-size: 36px;
     margin-bottom: 56px;
   }
@@ -154,6 +150,7 @@
   }
 
   .description_title {
+    font-weight: 400;
     font-size: 24px;
     margin-bottom: 24px;
   }
