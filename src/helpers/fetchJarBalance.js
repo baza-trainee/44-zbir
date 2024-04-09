@@ -12,7 +12,7 @@ const fetchJarBalance = async (callback) => {
 			//  !!! Видалити testLogResult після тестувань !!!
 			testLogResult(data);
 
-			const balance = Math.floor(data.amount / 100);
+			const balance = Math.floor(data.amount / 100 || 0);
 			callback(balance);
 		} else {
 			throw new Error(response.status);
