@@ -13,7 +13,6 @@
   z-index: 1;
 
   font-family: var(--font-family);
-  font-size: 20px;
 }
 
 .header__block {
@@ -73,6 +72,10 @@
     gap: 50px;
     padding: 0px 24px;
   }
+
+  .header__menu__item {
+    font-size: 20px;
+  }
 }
 
 @media all and (1280px <= width < 1440px) {
@@ -90,6 +93,10 @@
     padding: 0px 24px;
     gap: 30px;
   }
+
+  .header__menu__item {
+    font-size: 20px;
+  }
 }
 @media all and (1024px <= width < 1280px) {
   .headerdesk {
@@ -105,6 +112,10 @@
     display: flex;
     padding: 0px 12px;
     gap: 16px;
+  }
+
+  .header__menu__item {
+    font-size: 16px;
   }
 }
 
