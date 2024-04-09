@@ -55,7 +55,7 @@
   .image2 {
     width: 100%;
     border-radius: 20px;
-    content: image-set( '../../images/about/photo2-320-1x.jpg' 1x, '../../images/about/photo2-320-2x.jpg' 2x );
+    content: image-set( '../../../public/images/about/photo2-320-1x.jpg' 1x, '../../../public/images/about/photo2-320-2x.jpg' 2x );
 }
 }
 
@@ -82,7 +82,7 @@
   .image2 {
     width: 100%;
     border-radius: 20px;
-    content: image-set( '../../images/about/photo2-420-1x.jpg' 1x, '../../images/about/photo2-420-2x.jpg' 2x );
+    content: image-set( '../../../public/images/about/photo2-420-1x.jpg' 1x, '../../../publicimages/about/photo2-420-2x.jpg' 2x );
 }
 }
 
@@ -113,13 +113,13 @@
 .image1 {
   width: 100%;
   border-radius: 20px;
-  content: image-set( '../../images/about/photo1-768-1x.jpg' 1x, '../../images/about/photo1-768-2x.jpg' 2x );
+  content: image-set( '../../../public/images/about/photo1-768-1x.jpg' 1x, '../../../public/images/about/photo1-768-2x.jpg' 2x );
 }
 
 .image2 {
   width: 100%;
   border-radius: 20px;
-  content: image-set( '../../images/about/photo2-768-1x.jpg' 1x, '../../images/about/photo2-768-2x.jpg' 2x );
+  content: image-set( '../../../public/images/about/photo2-768-1x.jpg' 1x, '../../../public/images/about/photo2-768-2x.jpg' 2x );
 }
 
 }
@@ -137,13 +137,13 @@
   .image1 {
     width: 100%;
     border-radius: 20px;
-    content: image-set( '../../images/about/photo1-1024-1x.jpg' 1x, '../../images/about/photo1-1024-2x.jpg' 2x );
+    content: image-set( '../../../public/images/about/photo1-1024-1x.jpg' 1x, '../../../public/images/about/photo1-1024-2x.jpg' 2x );
   }
   
   .image2 {
     width: 100%;
     border-radius: 20px;
-    content: image-set( '../../images/about/photo2-1024-1x.jpg' 1x, '../../images/about/photo2-1024-2x.jpg' 2x );
+    content: image-set( '../../../public/images/about/photo2-1024-1x.jpg' 1x, '../../../public/images/about/photo2-1024-2x.jpg' 2x );
   }
   
 }
@@ -169,13 +169,13 @@
   .image1 {
     width: 100%;
     border-radius: 20px;
-    content: image-set( '../../images/about/photo1-1280-1x.jpg' 1x, '../../images/about/photo1-1280-2x.jpg' 2x );
+    content: image-set( '../../../public/images/about/photo1-1280-1x.jpg' 1x, '../../../public/images/about/photo1-1280-2x.jpg' 2x );
   }
   
   .image2 {
     width: 100%;
     border-radius: 20px;
-    content: image-set( '../../images/about/photo2-1280-1x.jpg' 1x, '../../images/about/photo2-1280-2x.jpg' 2x );
+    content: image-set( '../../../public/images/about/photo2-1280-1x.jpg' 1x, '../../../public/images/about/photo2-1280-2x.jpg' 2x );
   }
 }
 
@@ -185,12 +185,12 @@
   .image1 {
     width: 100%;
     border-radius: 20px;
-    content: image-set( '../../images/about/photo1-1920-1x.jpg' 1x, '../../images/about/photo1-1920-2x.jpg' 2x );
+    content: image-set( '../../../public/images/about/photo1-1920-1x.jpg' 1x, '../../../public/images/about/photo1-1920-2x.jpg' 2x );
   }
   
   .image2 {
     width: 100%;
     border-radius: 20px;
-    content: image-set( '../../images/about/photo2-1920-1x.jpg' 1x, '../../images/about/photo2-1920-2x.jpg' 2x );
+    content: image-set( '../../../public/images/about/photo2-1920-1x.jpg' 1x, '../../../public/images/about/photo2-1920-2x.jpg' 2x );
   }
 }

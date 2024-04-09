@@ -10,17 +10,14 @@
 .burgermenu__content {
   background-color: var(--fon);
   height: min-content;
-
   position: relative;
   position: absolute;
   top: 80px;
   right: 0px;
-
   display: grid;
   justify-items: stretch;
   padding-bottom: 32px;
   gap: 10px;
-
   font-family: var(--font-family);
 }
 
@@ -35,7 +32,6 @@
 /* ============ Адаптация ================ */
 @media all and (768px <= width < 1024px) {
   .burgermenu__content {
-    /* max-width: 1024px; */
     width: 100%;
   }
   .burgermenu__icon_close {
@@ -47,7 +43,6 @@
 
 @media all and (420px <= width < 768px) {
   .burgermenu__content {
-    /* max-width: 420px; */
     width: 100%;
   }
   .burgermenu__icon_close {
@@ -59,7 +54,6 @@
 
 @media all and (320px <= width < 420px) {
   .burgermenu__content {
-    /* max-width: 320px; */
     width: 100%;
   }
   .burgermenu__icon_close {
@@ -71,7 +65,6 @@
 
 @media all and (width <= 320px) {
   .burgermenu__content {
-    /* max-width: 320px; */
     width: 100%;
   }
   .burgermenu__icon_close {

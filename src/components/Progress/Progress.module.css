@@ -13,7 +13,7 @@
 .progress_item{
   min-width: 21px;
   height: 100%;
-  background-image: url('../../images/status-bar/progress_background.png');
+  background-image: url('../../../public/images/status-bar/progress_background.png');
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;

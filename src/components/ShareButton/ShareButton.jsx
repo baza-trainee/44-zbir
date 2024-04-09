@@ -1,5 +1,5 @@
 import styles from "./ShareButton.module.css";
-import icons from "../../sprite.svg";
+import icons from "../../../public/images/sprite.svg";
 
 const ShareButton = ({ onClick }) => {
   return (

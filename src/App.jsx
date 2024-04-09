@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-
 import Modal from "react-modal";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";

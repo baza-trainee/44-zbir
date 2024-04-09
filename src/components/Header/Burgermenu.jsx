@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from "react";
 import css from "./Burgermenu.module.css";
-import burgermenu from "./burgermenu.svg";
-import burgermenuclose from "./burgermenuclose.svg";
+import burgermenu from "../../../public/images/burger/burgermenu.svg";
+import burgermenuclose from "../../../public/images/burger/burgermenuclose.svg";
 import Item from "./Item";
 
 

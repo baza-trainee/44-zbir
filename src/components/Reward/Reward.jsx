@@ -1,15 +1,15 @@
-import sleeve_320_1x from "../../images/reward/sleeve-320-1x.jpeg";
-import sleeve_320_2x from "../../images/reward/sleeve-320-2x.jpeg";
-import sleeve_420_1x from "../../images/reward/sleeve-420-1x.jpg";
-import sleeve_420_2x from "../../images/reward/sleeve-420-2x.jpg";
-import sleeve_768_1x from "../../images/reward/sleeve-768-1x.jpeg";
-import sleeve_768_2x from "../../images/reward/sleeve-768-2x.jpeg";
-import sleeve_1024_1x from "../../images/reward/sleeve-1024-1x.jpeg";
-import sleeve_1024_2x from "../../images/reward/sleeve-1024-2x.jpeg";
-import sleeve_1280_1x from "../../images/reward/sleeve-1280-1x.jpeg";
-import sleeve_1280_2x from "../../images/reward/sleeve-1280-2x.jpeg";
-import sleeve_1440_1x from "../../images/reward/sleeve-1920-1x.jpg";
-import sleeve_1440_2x from "../../images/reward/sleeve-1920-2x.jpeg";
+import sleeve_320_1x from "../../../public/images/reward/sleeve-320-1x.jpeg";
+import sleeve_320_2x from "../../../public/images/reward/sleeve-320-2x.jpeg";
+import sleeve_420_1x from "../../../public/images/reward/sleeve-420-1x.jpg";
+import sleeve_420_2x from "../../../public/images/reward/sleeve-420-2x.jpg";
+import sleeve_768_1x from "../../../public/images/reward/sleeve-768-1x.jpeg";
+import sleeve_768_2x from "../../../public/images/reward/sleeve-768-2x.jpeg";
+import sleeve_1024_1x from "../../../public/images/reward/sleeve-1024-1x.jpeg";
+import sleeve_1024_2x from "../../../public/images/reward/sleeve-1024-2x.jpeg";
+import sleeve_1280_1x from "../../../public/images/reward/sleeve-1280-1x.jpeg";
+import sleeve_1280_2x from "../../../public/images/reward/sleeve-1280-2x.jpeg";
+import sleeve_1440_1x from "../../../public/images/reward/sleeve-1920-1x.jpg";
+import sleeve_1440_2x from "../../../public/images/reward/sleeve-1920-2x.jpeg";
 import css from "./Reward.module.css";
 
 const Reward = ({ reward }) => {

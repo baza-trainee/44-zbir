@@ -13,16 +13,12 @@
     bottom: 112px;
     right: 80px;
     z-index: 99;
-
     width: 53px;
     height: 53px;
-
     padding-left: 13px;
     padding-top: 7px;
-
     border: 2px solid var(--white-secondary);
     border-radius: 50%;
-
     cursor: pointer;
     transition: opacity 0.3s ease-in;
   }

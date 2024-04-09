@@ -1,6 +1,6 @@
 import React from "react";
-import photo1 from "../../images/about/photo1-1920-2x.jpeg";
-import photo2 from "../../images/about/photo2-1920-2x.jpeg";
+import photo1 from "../../../public/images/about/photo1-1920-2x.jpeg";
+import photo2 from "../../../public/images/about/photo2-1920-2x.jpeg";
 import css from "./About.module.css";
 
 const About = ({ aboutRef }) => {

@@ -3,15 +3,12 @@
 .headerdesk {
   background-color: var(--fon);
   height: 100px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   position: fixed;
   top: 0px;
   z-index: 1;
-
   font-family: var(--font-family);
 }
 
@@ -26,9 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   height: 100%;
-
   text-decoration: none;
 }
 
@@ -47,12 +42,6 @@
 .active {
   color: var(--blue);
 }
-
-/* button {
-  background-color: red;
-  width: 230px;
-  height: 80px;
-} */
 
 /* ============ Адаптация ================ */
 

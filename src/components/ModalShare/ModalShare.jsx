@@ -1,6 +1,6 @@
 import { useState } from "react";
 import css from "./ModalShare.module.css";
-import icons from "../../sprite.svg";
+import icons from "../../../public/images/sprite.svg";
 
 const ModalShare = ({ closeModal }) => {
   const [isCopyText, setIsCopyText] = useState(false);

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import css from "./ReturnBtn.module.css";
-import icons from "../../sprite.svg";
+import icons from "../../../public/images/sprite.svg";
 
 const ReturnBtn = () => {
   const [isVisible, setIsVisible] = useState(false);

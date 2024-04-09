@@ -1,10 +1,8 @@
 import { Fragment } from "react";
 import React, { useState, useEffect } from "react";
-
-
 import css from "./Header.module.css";
 import DonationBtn from "../DonationBtn/DonationBtn"
-import logo from "./logo.svg";
+import logo from "../../../public/images/logo.svg";
 import BurgerMenu from "./Burgermenu";
 import Item from "./Item";
 

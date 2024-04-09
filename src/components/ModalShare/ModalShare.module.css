@@ -2,12 +2,9 @@
   position: relative;
   margin: 0 auto;
   text-align: center;
-
   width: 310px;
   height: 472px;
-
   padding: 62px 0 40px 0;
-
   border-radius: 20px;
   background: #fff;
 }
@@ -30,18 +27,15 @@
   position: absolute;
   top: 0;
   right: 0;
-
   margin-top: 16px;
   margin-right: 16px;
 }
 
 .header {
   padding-bottom: 10px;
-
   border-bottom: 1px solid var(--secondary);
   font-weight: 500;
   font-size: 24px;
-
   line-height: 1.2;
   letter-spacing: 0.01em;
 }
@@ -56,10 +50,8 @@
 .text {
   margin: 30px auto;
   width: 302px;
-
   font-weight: 400;
   font-size: 20px;
-
   line-height: 1.5;
   letter-spacing: 0.01em;
   text-align: center;
@@ -75,11 +67,9 @@
   border-bottom: 1px solid var(--yellow-active);
   font-weight: 500;
   font-size: 20px;
-
   line-height: 1.5;
   letter-spacing: 0.01em;
   text-align: center;
-
   cursor: pointer;
 }
 

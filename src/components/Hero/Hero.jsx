@@ -1,6 +1,6 @@
 import styles from "./Hero.module.css";
 import DonationBtn from "../DonationBtn/DonationBtn";
-import icons from "../../sprite.svg";
+import icons from "../../../public/images/sprite.svg";
 
 const Hero = () => {
   return (
