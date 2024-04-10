@@ -35,7 +35,7 @@ export default function Header({ list, idPreview }) {
             {isMobile ?
 
                 <header className={css.headermobile}>
-                    <a href="./Header">
+                    <a href="/">
                         <img src={logo} alt="Logo" height={64} />
                     </a>
                     <BurgerMenu list={list} idPreview={idPreview} />
@@ -43,7 +43,7 @@ export default function Header({ list, idPreview }) {
                 </header>
                 :
                 <header className={css.headerdesk}>
-                    <a href="./Header">
+                    <a href="/">
                         <img src={logo} alt="Logo" height={84} />
                     </a>
 
