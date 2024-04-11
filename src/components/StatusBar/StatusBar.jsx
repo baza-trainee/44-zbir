@@ -10,12 +10,6 @@ const StatusBar = ({ goalRef }) => {
 	// Оновлення прогресу кожну хвилину.
 	useEffect(() => {
 		fetchJarBalance(setBalance);
-		const balance_update = setInterval(() => {
-			fetchJarBalance(setBalance);
-		}, 60000);
-		return () => {
-			clearInterval(balance_update);
-		};
 	}, []);
 
 	return (
